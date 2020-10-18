@@ -72,7 +72,7 @@ function gotResults(err, results){
     noStroke();
     textSize(30);
     textFont(font1);
-    text(results[0].label, windowWidth*0.2 , windowHeight/2 -275 +20*r);  // detection labels at the left top corner
+    text(results[0].label, windowWidth*0.2 , windowHeight/2 -225 +20*r);  // detection labels at the left top corner
   }
 }     
 
@@ -112,7 +112,7 @@ if (mode==0) {
   textSize(9);
   textAlign(RIGHT);
   //text('The Beauty of the Eaten Path ver.01', windowWidth-50,windowHeight-50); // the original version
-  text('The Beauty of the Eaten Path(2020) by Hun Lee', windowWidth-50,windowHeight*0.02);
+  text('The Beauty of the Eaten Path (2020) by Hun Lee', windowWidth-50,windowHeight*0.02);
 
 
 // mouse cursor (the logo)
@@ -135,13 +135,13 @@ if (mode==1) {
  textSize(9);
  textAlign(RIGHT);
  textFont(font3);
- text('The Beauty of the Eaten Path(2020) by Hun Lee', windowWidth-50,windowHeight*0.02);
+ text('The Beauty of the Eaten Path (2020) by Hun Lee', windowWidth-50,windowHeight*0.02);
  
 ///////for error message
-       textSize(14);
+       textSize(15);
        textAlign(CENTER); 
        text('ERROR : IF YOU ARE SEEING THIS TEXT,', windowWidth/2,windowHeight/2);
-       text('PLEASE LEAVE THIS WINDOW OPEN & RELOAD THE PROGRAM', windowWidth/2+25,windowHeight/2+25);
+       text('PLEASE LEAVE THIS WINDOW OPEN AND THEN OPEN & CLOSE A NEW TAB', windowWidth/2+25,windowHeight/2+25);
    
 // Korean words for 'bird', 'instinct algorithms'
  fill(220);
