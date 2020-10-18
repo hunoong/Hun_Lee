@@ -7,7 +7,7 @@ of the algorithmic survival movements that they create every day. <br/>**
 
 *If you want to try this program, click **[here]()***
 <br/>
-<img src="https://github.com/hunoong/Hun_Lee/blob/gh-pages/The_Beauty_of_Movements_poster.png" width="700"><br/>
+<img src="" width="700"><br/>
 
 ### Social Media Links
 **Instagram** <br/> 
