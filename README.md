@@ -19,9 +19,7 @@ If you would like to try this program out, click **[here](https://hunoong.github
 illustration **@[releeaf](https://www.instagram.com/releeaf/)** <br/>
 graphic design **[@hun_graphics](https://www.instagram.com/hun_graphics/)** <br/>
 
-**Behance**<br/>
-[Hun_Lee](https://www.behance.net/hun_lee)
-<br/>
+**Behance** [Hun_Lee](https://www.behance.net/hun_lee)<br/>
 
 **Contact**<br/>
 hunj.f.lee@gmail.com
