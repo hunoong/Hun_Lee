@@ -1,37 +1,18 @@
-## Welcome to GitHub Pages
+# Hun_Lee
+Melbourne based graphic designer &amp; illustrator
+<br/>
+### The Beauty of Movements(2020)
+**A generative art work in collaboration with birds to unveil and capture the live data<br/>
+of the algorithmic survival movements that they create every day. <br/>**
 
-You can use the [editor on GitHub](https://github.com/hunoong/hun_lee_/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+*If you wanna try this program, click [here]
+<br/>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### Social Media Links
+**Instagram** <br/> 
+illustration **@[releeaf](https://www.instagram.com/releeaf/)** <br/>
+graphic design **[@hun_graphics](https://www.instagram.com/hun_graphics/)** <br/>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/hunoong/hun_lee_/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+**Behance**<br/>
+[Hun_Lee](https://www.behance.net/hun_lee)
