@@ -6,7 +6,7 @@
 of the algorithmic survival movements that they create every day. <br/>**
 
 *This work is originally intended to track birds, however it can also track other objects too.<br/>
-If you would like to try this program out, click **[here](https://hunoong.github.io/slave2-A/The_Beauty_of_Movements/)***
+If you would like to try this program out, click **[here](https://hunoong.github.io/Hun_Lee/The_Beauty_of_the_Eaten_Path/)***
 <br/>
 <img src="https://hunoong.github.io/Hun_Lee/The_Beauty_of_Movements_poster.png" width="650"><br/>
 
