@@ -1,5 +1,5 @@
 # Hun_Lee
-##### Melbourne based graphic designer &amp; illustrator
+##### Melbourne based graphic designer & illustrator
 <br/>
 
 ### The Beauty of the Eaten Path (2020)
