@@ -11,7 +11,7 @@ of the algorithmic survival movements that they create every day. <br/>**
 If you would like to try this program out, click **[here](https://hunoong.github.io/Hun_Lee/The_Beauty_of_the_Eaten_Path/)*** (laptop only)
 <br/>
 <br/>
-<img src="https://hunoong.github.io/Hun_Lee/The_Beauty_of_the_Eaten_Path_poster.png" width="1000"><br/>
+<img src="https://hunoong.github.io/Hun_Lee/The_Beauty_of_the_Eaten_Path_poster_.png" width="1000"><br/>
 
 
 ### Social Media Links
