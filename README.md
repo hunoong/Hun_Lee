@@ -2,7 +2,7 @@
 ##### Melbourne based graphic designer &amp; illustrator
 <br/>
 
-### The Beauty of the Eaten Path(2020)
+### The Beauty of the Eaten Path (2020)
 **A generative art work in collaboration with birds to unveil and capture the live data<br/>
 of the algorithmic survival movements that they create every day. <br/>**
 <br/>
