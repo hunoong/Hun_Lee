@@ -5,7 +5,8 @@
 ### The Beauty of the Eaten Path(2020)
 **A generative art work in collaboration with birds to unveil and capture the live data<br/>
 of the algorithmic survival movements that they create every day. <br/>**
-
+<br/>
+<br/>
 *This work is originally intended to track birds, however it can also track other objects too.<br/>
 If you would like to try this program out, click **[here](https://hunoong.github.io/Hun_Lee/The_Beauty_of_the_Eaten_Path/)***
 <br/>
