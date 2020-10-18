@@ -5,7 +5,7 @@ Melbourne based graphic designer &amp; illustrator
 **A generative art work in collaboration with birds to unveil and capture the live data<br/>
 of the algorithmic survival movements that they create every day. <br/>**
 
-*If you want to try this program, click **[here](https://github.com/hunoong/slave2-A/tree/master/week01)***
+*If you want to try this program, click **[here](https://github.com/hunoong/Hun_Lee/tree/gh-pages/themeinfo)***
 <br/>
 <img src="https://github.com/hunoong/Hun_Lee/blob/gh-pages/The_Beauty_of_Movements_poster.png" width="700"><br/>
 
