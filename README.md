@@ -24,6 +24,6 @@ graphic design **[@hun_graphics](https://www.instagram.com/hun_graphics/)** <br/
 
 **Behance** [Hun_Lee](https://www.behance.net/hun_lee)<br/>
 
-**Contact**<br/>
-hunj.f.lee@gmail.com
+### Contact
+[hunj.f.lee@gmail.com](hunj.f.lee@gmail.com)
 <br/>
