@@ -3,8 +3,8 @@
 <br/>
 
 ### *The Beauty of the Eaten Path (2020)*
-A generative art work in collaboration with birds to unveil and capture the live data<br/>
-of the algorithmic survival movements that they create every day. <br/>
+**A generative art work in collaboration with birds to unveil and capture the live data<br/>
+of the algorithmic survival movements that they create every day. <br/>**
 이 작품은 자연과의 협업으로, 새들이 매일 만들어내는 알고리즘적 생존본능의 길을 시각적으로 드러낸다.<br/>
 디지털 캔버스에 그려지는 그들의 움직임은 인쇄된 포스터 시리즈와 함께 전시된다. <br/>
 
