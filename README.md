@@ -17,10 +17,10 @@ Capturing and unveiling the live data of the algorithmic survival movements that
 
 <br/>
 
-### Social Media Links
+### Social Media
 **Instagram** <br/> 
-illustration **@[releeaf](https://www.instagram.com/releeaf/)** <br/>
-graphic design **[@hun_graphics](https://www.instagram.com/hun_graphics/)** <br/>
+>illustration **@[releeaf](https://www.instagram.com/releeaf/)** <br/>
+>graphic design **[@hun_graphics](https://www.instagram.com/hun_graphics/)** <br/>
 
 **Behance** [Hun_Lee](https://www.behance.net/hun_lee)<br/>
 
