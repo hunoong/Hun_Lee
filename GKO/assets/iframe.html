@@ -1,0 +1,316 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="robots" content="noindex, follow">
+    <meta id="vp" name="viewport" content="minimum-scale=1, maximum-scale=1, user-scalable=no, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <title>FlipSnack</title>
+
+    <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+            min-height: 100%;
+            min-width: 100%;
+            overflow: hidden;
+            background-color: transparent;
+            border: 0;
+            padding: 0;
+            margin: 0;
+        }
+
+        .embederror {
+            width: 100%;
+            display: block;
+            text-align: center;
+            position: relative;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            font-family: sans-serif;
+        }
+    </style>
+
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+
+    <script>
+        var VERSION = '$VERSION',
+            GET = {
+                referrer: document.referrer
+            },
+            ERR = {
+                INVALID_HASH: "Invalid hash",
+                INVALID_URL: "'Invalid url",
+                FATAL_ERROR: "An error has occured",
+                NOT_ON_IE8: "Our widgets don\'t work on IE8. So sorry about that! Please upgrade to the latest version of IE or use a different browser."
+            };
+
+        function openGoPremium() {
+            var url = document.referrer.split('#')[0];
+            window.top.location.href = url + '#st-buy-points&vipOnly=1';
+        }
+
+        function setDirectLinkParam(name, value) {
+            if (!name || !value) {
+                return;
+            }
+
+            var msg = 'setDlParam_' + name + '_' + value,
+                protocol = document.referrer.indexOf('https://') === 0 ? 'https://' : 'http://',
+                regex = new RegExp(protocol + '[^/]+'),
+                parentHost = regex.exec(document.referrer);
+
+            if (parentHost && parentHost[0] && parentHost[0].length > 0) {
+                parent.postMessage(msg, '*');
+            }
+        }
+
+        function sendReferrer() {
+            var f = frames[0] || null;
+            if (f) {
+                window.postMessage(document.referrer, '*');
+            }
+
+        }
+
+        function sendOrientation() {
+            var f = frames[0] || null;
+            if (f) {
+                f.postMessage('orientationchange:' + window.orientation + '_' + document.body.scrollWidth + 'x' + document.body.scrollHeight, 'http://d14lyz5e3rdac7.cloudfront.net');
+            }
+        }
+
+        function receiveMessage(event) {
+
+        }
+
+        function fatalError(err) {
+            document.body.innerHTML = '<span class="embederror">' + err + '</span>';
+        }
+
+        function isMobileDevice() {
+            var ua = window.navigator.userAgent.toLowerCase(),
+                result = ua.match(/(iphone|ipod|ipad|android|windows phone|silk|blackberry|iemobile)/i);
+            return result && result.length > 0 ? true : false;
+        }
+
+        function urlencode(str) {
+            return encodeURIComponent(str)
+                    .replace(/!/g, '%21')
+                    .replace(/'/g, '%27')
+                    .replace(/\(/g, '%28')
+                    .replace(/\)/g, '%29')
+                    .replace(/\*/g, '%2A')
+                    .replace(/%20/g, '+');
+        }
+
+        function documentReady() {
+            var i;
+            if (location.search) {
+                var vars = location.search.substr(1).split('&');
+                for (i in vars) {
+                    var param = vars[i].split('=', 2);
+                    GET[param[0]] = decodeURIComponent(param[1]);
+                }
+            }
+
+            if (!GET.hash) {
+                fatalError(ERR.INVALID_HASH);
+                return;
+            }
+
+            if (GET.v) {
+                VERSION = GET.v;
+            }
+
+            if (GET.bgcolor) {
+                if (GET.bgcolor.substr(0, 1) != '#') {
+                    GET.bgcolor = '#' + GET.bgcolor;
+                }
+                if (GET.bgcolor.length != 7) {
+                    delete GET.bgcolor;
+                }
+            }
+
+            if (isMobileDevice() && !GET.download) {
+                loadWidgetVechi();
+            } else {
+                loadWidgetNou();
+            }
+        }
+
+        function loadWidgetVechi() {
+            try {
+                var HTML5_IFRAME_PATH = 'http://d14lyz5e3rdac7.cloudfront.net/iframehtml5/embed.html'; // pt DEV
+                var ifrsrc = HTML5_IFRAME_PATH + '?hash=' + GET.hash + '&v=' + VERSION;
+                if (GET.t) {
+                    ifrsrc += '&t=' + urlencode(GET.t);
+                }
+                if (GET.forceWidget) {
+                    ifrsrc += '&forceWidget=true';
+                }
+                if (GET.openfsnewtab && GET.openfsnewtab == 'true') {
+                    ifrsrc += '&openfsnewtab=true';
+                }
+                if (GET.rmm) {
+                    ifrsrc += '&rmm=1';
+                }
+                if (GET.dt) {
+                    ifrsrc += '&dt=1';
+                }
+                if (GET.be) {
+                    ifrsrc += '&be=1';
+                }
+                if (GET.forcewm) {
+                    ifrsrc += '&forcewm=1';
+                }
+                if (GET.p) { // startPage
+                    try {
+                        ifrsrc += ('&startPage=' + parseInt(GET.p));
+                    } catch(err) { }
+                }
+                if (GET.b) { // startBook
+                    try {
+                        ifrsrc += ('&startBook=' + parseInt(GET.b));
+                    } catch(err) { }
+                }
+                if (GET.novignette) {
+                    try {
+                        ifrsrc += ('&novignette=' + GET.novignette);
+                    } catch(err) { }
+                }
+                var ifrattr = {src: ifrsrc, width: '100%', height: '100%', allowtransparency: 'true', frameborder: '0', scrolling: 'no', seamless: 'seamless', previous_page: window.location};
+                var ifrm = document.createElement('iframe');
+                for (var i in ifrattr) {
+                    ifrm.setAttribute(i, ifrattr[i]);
+                }
+                document.body.appendChild(ifrm);
+                window.addEventListener('message', function(message) {
+                    if (message.data) {
+                        if (message.data.substring(0, 9) == 'redirect_') {
+                            parent.location.href = message.data.substring(9);
+                        } else if (message.data.substring(0, 13) == 'openGoPremium') {
+                            openGoPremium();
+                        } else if (message.data.substring(0, 9) == 'startBook') {
+                            setDirectLinkParam('startBook', message.data.substring(10, message.data.length));
+                        } else if (message.data.substring(0, 9) == 'startPage') {
+                            setDirectLinkParam('startPage', message.data.substring(10, message.data.length));
+                        } else if (message.data === 'orientationchange') {
+                            sendOrientation();
+                        }
+                    }
+                });
+
+                if (isMobileDevice()) {
+                    window.addEventListener('orientationchange', function() {
+                        sendOrientation();
+                    });
+                }
+            } catch(e) {
+                fatalError(e);
+            }
+        }
+
+        function loadJS(url, callback) {
+            var headTag = document.getElementsByTagName('HEAD').item(0);
+            var scriptTag= document.createElement('script');
+            scriptTag.type = 'text/javascript';
+            scriptTag.src = url;
+            scriptTag.onload = function() {
+                if (typeof callback === 'function') {
+                    callback.apply(window, arguments);
+                }
+            };
+            headTag.appendChild(scriptTag);
+        }
+
+        function addJS(url) {
+            var headTag = document.getElementsByTagName('HEAD').item(0);
+            var scriptTag= document.createElement('script');
+            scriptTag.type = 'text/javascript';
+            scriptTag.src = url;
+            headTag.appendChild(scriptTag);
+        }
+
+        function loadCSS(url) {
+            var headTag = document.getElementsByTagName('HEAD').item(0);
+            var linkTag = document.createElement('link');
+            linkTag.rel = 'stylesheet';
+            linkTag.type = 'text/css';
+            linkTag.href = url;
+            headTag.appendChild(linkTag);
+        }
+
+        function loadWidgetNou() {
+            var baseUrl = 'widget/';
+
+            loadCSS(baseUrl + 'main.min.css');
+            loadCSS(baseUrl + 'desktop.min.css');
+            loadCSS(baseUrl + 'shelf.min.css');
+            loadCSS(baseUrl + 'theme.min.css');
+
+            loadJS(baseUrl + 'main.min.js', function() {
+                loadJS(baseUrl + 'desktop.min.js', function() {
+                    loadJS(baseUrl + 'customcontent.min.js', function() {
+                        loadJS(baseUrl + 'shelf.min.js', function() {
+                            setupWidgetNou();
+                        });
+                    });
+                });
+            });
+        }
+
+        function setupWidgetNou() {
+            try {
+                var i;
+
+                if (FSUtils.isIE8()) {
+                    fatalError(ERR.NOT_ON_IE8);
+                    return;
+                }
+
+                if (location.search) {
+                    var vars = location.search.substr(1).split('&');
+                    for (i in vars) {
+                        var param = vars[i].split('=', 2);
+                        GET[param[0]] = decodeURIComponent(param[1]);
+                    }
+                }
+
+                if (!GET.hash) {
+                    fatalError(ERR.INVALID_HASH);
+                    return;
+                }
+
+                GET.v = GET.v || VERSION;
+
+                if (GET.bgcolor) {
+                    if (GET.bgcolor.substr(0, 1) !== '#') {
+                        GET.bgcolor = '#' + GET.bgcolor;
+                    }
+                    if (GET.bgcolor.length !== 7) {
+                        delete GET.bgcolor;
+                    }
+                }
+
+                var embed = new FlipSnackEmbed(GET);
+                embed.on('pageChanged', function(e) {
+                    setDirectLinkParam('startBook', e.book);
+                    setDirectLinkParam('startPage', e.page);
+                });
+                embed.on('bookChanged', function(e) {
+                    setDirectLinkParam('startBook', e.book);
+                    setDirectLinkParam('startPage', e.page);
+                });
+
+            } catch (e) {
+                fatalError(e);
+            }
+        }
+    </script>
+
+</head>
+
+<body onload="documentReady()"></body>
+</html>
