@@ -18,4 +18,4 @@ Capturing and unveiling the live data of the algorithmic survival movements that
 <br/>
 
 ### Contact
-***[hunlee.work](https://hunlee.work/)***
+***[@hun_graphics](https://www.instagram.com/hun_graphics/?hl=en)***
